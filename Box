@@ -1,0 +1,13 @@
+package genericsBox;
+
+public class Box<T> {
+    private T element;
+    public Box(T ele){
+        this.element=ele;
+    }
+
+    @Override
+    public String toString() {
+        return element.getClass().getName()+": "+this.element;
+    }
+}
